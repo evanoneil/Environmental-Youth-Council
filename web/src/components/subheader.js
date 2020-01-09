@@ -18,6 +18,9 @@ import Four from './img/4.jpg'
 import Five from './img/5.jpg'
 import Six from './img/6.jpg'
 import Break from './img/break.png'
+import GP from './img/gp.jpg'
+import PM from './img/mem.png'
+import RYSS from './img/ryss.jpg'
 
 import styles from './header.module.css'
 
@@ -93,7 +96,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <div class="w-33 flex tc pa3">
             <center>
               <span class="mlauto">
-                <img src={Three} /> 
+                <img src={GP} /> 
               </span>
               <h4>Galena Park High School</h4>
             </center>
@@ -102,7 +105,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <center>
 
             <span class="mlauto">
-              <img src={Three} /> 
+              <img src={PM} /> 
             </span>
             <h4>Pasadena Memorial High School</h4>
             </center>
@@ -112,7 +115,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <center>
 
             <span class="mlauto">
-              <img src={Three} /> 
+              <img src={RYSS} /> 
             </span>
             <h4>Raul Yzaguirre School for Success (RYSS)</h4>
 </center>
