@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900");
+
+.galaxy {
+  border-radius: 0 0 35px 35px;
+}
+
+.eycblue {
+  background: #004e95;
+}
+
+.subheadblock {
+  margin-top: -50px;
+  z-index: -0;
+  position: relative;
+}
+
+.subheadblock2 {
+  margin-top: -330px;
+  border-radius: 35px;
+  z-index: 2 !important;
+  position: relative;
+
+}
+
+.subheadinterior {
+  margin-left:6.5rem;margin-right:auto;
+}
+
+.mlauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zneg1 {
+  z-index:-10;
+}
+
+.z1 {
+  z-index:-10;
+}
