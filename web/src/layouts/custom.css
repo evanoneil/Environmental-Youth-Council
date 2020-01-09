@@ -38,3 +38,9 @@
 .z1 {
   z-index:-10;
 }
+
+.enterprise {
+  background: url('./img/group.png');
+  background-size: cover;
+  background-position: center;
+}
