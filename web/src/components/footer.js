@@ -12,7 +12,7 @@ const Footer = ({onHideNav, onShowNav, showNav, siteTitle}) => (
 <div class="tc-l black mt4 mt5-m mt6-l ph3 w-100">
   <h1 class="f2 f1-l fw2 black-90 mb0 lh-title">Would you like more information?</h1>
   <h2 class="fw1 f3 black-80 mt3 mb4"></h2>
-  <a class="f5 no-underline grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4"  href="/">Contact Us</a>
+  <a class="f5 no-underline grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4"  href="mailto:teenscareaboutcleanair@edf.org">Contact Us</a>
 </div>
 
 <div class="w-100" className={styles.mbneg6}>
