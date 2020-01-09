@@ -11,7 +11,7 @@ import styles from './header.module.css'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
   <div class="z1">
-    <div class="w-100 pb6-m" className={styles.enterprise} >
+    <div className={styles.enterprise} >
       <div className={styles.bluebk}>
         <nav class="dt w-100 bg-white pl5 pr5 pt3 pb3 center galaxy"  > 
           <div class="dtc w5 v-mid pa3">
