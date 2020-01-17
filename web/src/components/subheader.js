@@ -38,7 +38,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <section
         class="cf w-60-l w-80-m w-80 center pa3 pv5-l bg-green subheadblock2"
       >
-        <div class="subheadinterior justify-between">
+        <div class="subheadinterior justify-center flex flex-wrap">
           <Subheaditem icon={Flower} title="Environmental Health" />
           <Subheaditem icon={Cloud} title="Air Quality" />
           <Subheaditem icon={GWW} title="Environmental Health" />
