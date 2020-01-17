@@ -30,7 +30,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
         <article class="vh-50 pa4 mt4 dt w-100">
           <div class="tc v-top tc black ph3 ph4-l">
             <center>
-            <h1 class="mw7 f2-m f2-l f3 fw6 tc white mb3">Preparing students in Houston and the surrounding areas to be the next generation of leaders building healthy and resilient communities.</h1>
+            <h1 class="mw7 f2-m f2-l f4 fw6 tc white mb3">Preparing students in Houston and the surrounding areas to be the next generation of leaders building healthy and resilient communities.</h1>
             </center>
           </div>
 

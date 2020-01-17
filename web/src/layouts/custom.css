@@ -22,13 +22,13 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 .subheadblock2{
-  margin-top:-100px;
+  margin-top:-200px;
 }
 }
 
-@media only screen and (min-width: 400px) and (max-width:900px){
+@media only screen and (min-width: 451px) and (max-width:900px){
   .subheadblock2{
     margin-top:-250px;
   }
