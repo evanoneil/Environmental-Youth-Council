@@ -14,23 +14,23 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
     <div className={styles.enterprise} >
       <div className={styles.bluebk}>
         <nav class="dt w-100 bg-white pl5 pr5 pt3 pb3 center galaxy"  > 
-          <div class="dtc w5 v-mid pa3">
+          <div class="db w5 v-mid pa1">
             <Link to="./">
               <img src={Logo} />                    
               </Link>
           </div>
-          <div class="dtc v-mid tr pa3">
+          <div class="dtc-ns db  v-mid tr pa3">
             {/* <a class="f6 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="/" >About Us</a> 
-            <a class="f6 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="/" >Blog/News</a> 
-            <a class="f6 fw4 hover-white no-underline black-70 dn dib-l pv2 ph3" href="/" >Video Contest</a>  */}
-            <a class="f6 fw4 hover-white no-underline black-70 dib ml2 pv2 ph3 ba" href="./contact" >Contact Us</a> 
+            <a class="f6 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="/" >Blog/News</a> */}
+            <a class="f6 fw4 hover-white no-underline black-70   pv2 ph3" href="./video" >Video Contest</a>  
+            <a class="f6-ns f7 fw4 hover-blue no-underline black-70  ml2 pv2 ph3 ba" href="./contact" >Contact Us</a> 
           </div>
         </nav> 
 
-        <article class="vh-50 pa5 dt w-100">
-          <div class="dtc v-mid tc black ph3 ph4-l">
+        <article class="vh-50 pa4 mt4 dt w-100">
+          <div class="tc v-top tc black ph3 ph4-l">
             <center>
-            <h1 class="mw7 f2-m f-4-l fw6 tc white mb3">Preparing students in Houston and the surrounding areas to be the next generation of leaders building healthy and resilient communities.</h1>
+            <h1 class="mw7 f2-m f2-l f3 fw6 tc white mb3">Preparing students in Houston and the surrounding areas to be the next generation of leaders building healthy and resilient communities.</h1>
             </center>
           </div>
 

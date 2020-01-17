@@ -21,6 +21,7 @@ import Break from './img/break.png'
 import GP from './img/gp.jpg'
 import PM from './img/mem.png'
 import RYSS from './img/ryss.jpg'
+import Subheaditem from './subheaditem'
 
 import styles from './header.module.css'
 
@@ -35,53 +36,16 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   </div>
 
       <section
-        class="cf w-60 center pt5 pb5 bg-green subheadblock2"
+        class="cf w-60-l w-80-m w-80 center pa3 pv5-l bg-green subheadblock2"
       >
-        <div class="subheadinterior">
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={Flower} class="mw3" />
-              <h3 class="f5 center f4-ns mb0 white-90">Environmental Health</h3>
-            </a>
-          </article>
+        <div class="subheadinterior justify-between">
+          <Subheaditem icon={Flower} title="Environmental Health" />
+          <Subheaditem icon={Cloud} title="Air Quality" />
+          <Subheaditem icon={GWW} title="Environmental Health" />
+          <Subheaditem icon={Sun} title="Climate Change" />
+          <Subheaditem icon={World} title="Public Policy" />
+          <Subheaditem icon={Hand} title="Civic Engagement" />
 
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={Cloud} class="mw3" />
-              <h3 class="f5 center f4-ns mb0  white-90">Air Quality</h3>
-            </a>
-          </article>
-
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={GWW} class="mw3" />
-              <h3 class="f5 center f4-ns mb0 white-90">Climate Change</h3>
-            </a>
-          </article>
-
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={Sun} class="mw3" />
-
-              <h3 class="f5 center f4-ns mb0 white-90">Environmental Justice</h3>
-            </a>
-          </article>
-
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={World} class="mw3" />
-
-              <h3 class="f5 center f4-ns mb0 white-90">Public Policy</h3>
-            </a>
-          </article>
-
-          <article class="tc fl w-100 w-50-m white w-30-ns pa1-ns">
-            <a href="#0" class="ph2 ph0-ns pb3 link db">
-              <img src={Hand} class="mw3" />
-
-              <h3 class="f5 center f4-ns mb0  white-90">Civic Engagement</h3>
-            </a>
-          </article>
         </div>
       </section>
 
@@ -125,8 +89,8 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         <br />
 
         <h2 class="tc dark-blue f2">What we do</h2>
-        <div class="flex">
-          <article class="br2 dark-gray   mv4 w-100 w-50-m w-30-l  bg-green  center">
+        <div class="flex flex-wrap justify-center">
+          <article class="br2 dark-gray ma3   w-100 w-40-m w-30-l  bg-green  ">
             <img src={One} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
@@ -140,7 +104,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             </div>
           </article>
 
-          <article class="br2    dark-gray   mv4 w-100 w-50-m w-30-l  bg-green   center">
+          <article class="br2    dark-gray  ma3  w-100 w-40-m w-30-l  bg-green   ">
             <img src={Two} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
@@ -154,7 +118,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             </div>
           </article>
 
-          <article class="br2    dark-gray   mv4 w-100 w-50-m w-30-l  bg-green   center">
+          <article class="br2    dark-gray ma3   w-100 w-40-m w-30-l  bg-green    ">
             <img src={Three} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
@@ -167,12 +131,10 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
               </p>
             </div>
           </article>
-        </div>
-
-        <div class="flex">
 
 
-          <article class="br2    dark-gray   mv4 w-100 w-50-m w-30-l  bg-green   center">
+
+          <article class="br2    dark-gray ma3   w-100 w-40-m w-30-l  bg-green   ">
             <img src={Five} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
@@ -186,7 +148,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             </div>
           </article>
 
-          <article class="br2    dark-gray   mv4 w-100 w-50-m w-30-l bg-green    center">
+          <article class="br2    dark-gray ma3   w-100 w-40-m w-30-l  bg-green    ">
             <img src={Six} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
@@ -200,7 +162,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             </div>
           </article>
 
-          <article class="br2    dark-gray   mv4 w-100 w-50-m w-30-l  bg-green   center">
+          <article class="br2    dark-gray ma3   w-100 w-40-m w-30-l  bg-green   ">
             <img src={Four} class="db w-100 br2 br--top" />
             <div class="pa2 ph3-ns pb3-ns">
               <div class="dt w-100 mt1">
