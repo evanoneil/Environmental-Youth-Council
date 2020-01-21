@@ -12,7 +12,7 @@ const Footer = ({onHideNav, onShowNav, showNav, siteTitle}) => (
 <div class="tc-l black mt4 mt5-m mt6-l ph3 w-100">
   <h1 class="f2 f1-l fw2 black-90 mb0 lh-title">Would you like more information?</h1>
   <h2 class="fw1 f3 black-80 mt3 mb4"></h2>
-  <a class="f5 no-underline grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4"  href="mailto:teenscareaboutcleanair@edf.org">Contact Us</a>
+  <a class="f5 no-underline grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4"  href="/contact">Contact Us</a>
   <br /><img class="w-20 mt5" src="https://onebreathhou.org/static/edf-2a1487a131ff6d018a6e886b7ac4b25e.png" />
 
 </div>
@@ -27,16 +27,16 @@ const Footer = ({onHideNav, onShowNav, showNav, siteTitle}) => (
 <footer class="pa4 pa5-l white-70 bt eycblue" >
   <div class="w-100">
     <div class="dib mb4-l w-50-l w-100 cf">
-      <h1 class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Want to learn more about <br />the Environmental Youth Council? 
-</h1>
+      {/* <h1 class="fl w-100 pv0 f6 fw6 ttu tracked mb4">Want to learn more about <br />the Environmental Youth Council? 
+</h1> */}
       <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
 
-        <div class="mb4 mb0-ns dib">
+        {/* <div class="mb4 mb0-ns dib">
         Contact Shannon Thomas at  &nbsp;
           <a class="white-70 f3-ns fw6 tl link dim dib" href="mailto:teenscareaboutcleanair@edf.org"> teenscareaboutcleanair@edf.org</a>
-        </div>
+        </div> */}
 
-        <div class="mt3">
+        <div class="mt3 lh-copy">
 
         The Environmental Youth Council is a program of Environmental Defense Fund. Research reported in this website was supported by the Gulf Research Program of the National Academies of Sciences, Engineering, and Medicine under award number 2000009823. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Gulf Research Program or the National Academies of Sciences, Engineering, and Medicine.
         </div>
