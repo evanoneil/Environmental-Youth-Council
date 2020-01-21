@@ -22,8 +22,8 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
           <div class="dtc-ns db  v-mid tr pa3">
             {/* <a class="f6 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="/" >About Us</a> 
             <a class="f6 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="/" >Blog/News</a> */}
-            <a class="f6 fw4 hover-white no-underline black-70   pv2 ph3" href="./video" >Video Contest</a>  
-            <a class="f6-ns f7 fw4 hover-blue no-underline black-70  ml2 pv2 ph3 ba" href="./contact" >Contact Us</a> 
+            <Link class="f6 fw4 hover-white no-underline black-70   pv2 ph3" to="./video" >Video Contest</Link>  
+            <Link class="f6-ns f7 fw4 hover-blue no-underline black-70  ml2 pv2 ph3 ba" to="./contact" >Contact Us</Link> 
           </div>
         </nav> 
 

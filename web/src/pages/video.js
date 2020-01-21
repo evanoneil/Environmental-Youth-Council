@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'gatsby'
 import { graphql } from "gatsby";
 import {
   mapEdgesToNodes,
@@ -167,7 +168,8 @@ RYSS – Mrs. Rebecca Enquist<br />
           </p>
 
 
-          <h3 class="tc dark-blue f3 tc">TEACHERS AND ADMINISTRATORS CLICK HERE<br /> to receive information about how your school can participate!  </h3>
+          <Link to="./contact/"><h3 class="tc dark-blue f3 tc">TEACHERS AND ADMINISTRATORS CLICK HERE<br /> to receive information about how your school can participate!  </h3></Link>
+
 
         </section>
       </Container>
