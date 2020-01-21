@@ -36,13 +36,13 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   </div>
 
       <section
-        class="cf w-60-l w-80-m w-80 center pa3 pv5-l bg-green subheadblock2"
+        class="cf w-60-l w-80-m w-90 center pa3 pv5-l bg-green subheadblock2"
       >
         <div class="subheadinterior justify-between flex flex-wrap">
           <Subheaditem icon={Flower} title="Environmental Health" />
           <Subheaditem icon={Cloud} title="Air Quality" />
-          <Subheaditem icon={GWW} title="Environmental Health" />
-          <Subheaditem icon={Sun} title="Climate Change" />
+          <Subheaditem icon={GWW} title="Climate Change" />
+          <Subheaditem icon={Sun} title="Environmental Justice" />
           <Subheaditem icon={World} title="Public Policy" />
           <Subheaditem icon={Hand} title="Civic Engagement" />
 
@@ -56,8 +56,8 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         Environmental Defense Fund’s Environmental Youth Council is an educational program for high school students from the communities in Houston that are most affected by air pollution. The program is funded by a grant from the Gulf Research Program of the National Academy of Sciences (NAS).
         </p>
         <p class="lh-copy fw3 f3">The Environmental Youth Council includes students from </p>
-        <div class="w-100 flex tc">
-          <div class="w-33 flex tc pa3">
+        <div class="w-100 flex  flex-wrap tc">
+          <div class="w-33-l w-100 flex tc pa3">
             <center>
               <span class="mlauto">
                 <img src={GP} /> 
@@ -65,7 +65,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
               <h4>Galena Park High School</h4>
             </center>
           </div>
-          <div class="w-33 flex tc pa3">
+          <div class="w-33-l w-100 flex tc pa3">
           <center>
 
             <span class="mlauto">
@@ -75,7 +75,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             </center>
 
           </div>
-          <div class="w-33 flex tc pa3">
+          <div class="w-33-l w-100 flex tc pa3">
           <center>
 
             <span class="mlauto">

@@ -98,11 +98,30 @@ const ContactPage = props => {
       <Container>
       <h2 class="tc dark-blue f2">      Want to learn more about the <br />Environmental Youth Council? 
 </h2>
-        <p class="lh-copy fw3 f3 center">
-        <center>
-          Contact Shannon Thomas at <a href="mailto:teenscareaboutcleanair@edf.org">teenscareaboutcleanair@edf.org</a>
-          </center>
-        </p>
+<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  {/* You still need to add the hidden input with the form name to your JSX form */}
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <form class="contact-form row">
+      <div class="form-field col x-50">
+         <input id="name" class="input-text js-input" type="text" required />
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="email" class="input-text js-input" type="email" required />
+         <label class="label" for="email">E-mail</label>
+      </div>
+      <div class="form-field col x-100">
+         <input id="message" class="input-text js-input" type="text" required />
+         <label class="label" for="message">Message</label>
+      </div>
+      <div class="form-field col x-100 align-center">
+         <input class="submit-btn" type="submit" value="Submit" />
+      </div>
+   </form>
+
+
+</form>
 
 
       </Container>
