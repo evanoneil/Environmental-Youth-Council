@@ -69,13 +69,10 @@ export const query = graphql`
   }
 `;
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+
 
 const ThanksPage = props => {
+  const { data, errors } = props;
 
 
   if (errors) {
