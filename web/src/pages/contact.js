@@ -91,40 +91,81 @@ const ContactPage = props => {
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
     );
   }
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
 
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container>
-      <h2 class="tc dark-blue f2">      Want to learn more about the <br />Environmental Youth Council? 
-</h2>
-<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-  {/* You still need to add the hidden input with the form name to your JSX form */}
-  <input type="hidden" name="form-name" value="contact" />
-  
-  <form class="contact-form row">
-      <div class="form-field col x-50">
-         <input id="name" class="input-text js-input" type="text" required />
-         <label class="label" for="name">Name</label>
-      </div>
-      <div class="form-field col x-50">
-         <input id="email" class="input-text js-input" type="email" required />
-         <label class="label" for="email">E-mail</label>
-      </div>
-      <div class="form-field col x-100">
-         <input id="message" class="input-text js-input" type="text" required />
-         <label class="label" for="message">Message</label>
-      </div>
-      <div class="form-field col x-100 align-center">
-         <input class="submit-btn" type="submit" value="Submit" />
-      </div>
-   </form>
+          <Container>
 
+      <h1 class="tc dark-blue mb5">Want to learn more about the
+Environmental Youth Council?</h1>
+      <form
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+        class="contact-form row"
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" class="input-text js-input" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
+        <div class="form-field col x-50">
+        
+          <label>
+            Your name:
+            <br />
+            <input type="text" class="input-text js-input" name="name" onChange={handleChange} />
+          </label>
+        
+        </div>
+        <div class="form-field col x-50">
 
-</form>
+          <label>
+            Your email:
+            <br />
+            <input type="email" class="input-text js-input" name="email" onChange={handleChange} />
+          </label>
+        </div>
+        <div class="form-field  col x-100">
 
+        <p>
+          <label>
+            Message:
+            <br />
+            <textarea  class="input-text js-input" name="message" onChange={handleChange} />
+          </label>
+        </p>
+        </div>
 
+        <p class="tc">
+          <button class="f5 no-underline center tc grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4" type="submit">Send Message</button>
+        </p>
+      </form>
       </Container>
+
     </Layout>
   );
 };
