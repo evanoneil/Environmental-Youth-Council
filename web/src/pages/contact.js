@@ -14,6 +14,7 @@ import "../layouts/tachyons/css/tachyons.css";
 import "../layouts/custom.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { navigate } from 'gatsby-link'
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -68,8 +69,16 @@ export const query = graphql`
   }
 `;
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 const ContactPage = props => {
   const { data, errors } = props;
+
+  const [state, setState] = React.useState({})
 
   if (errors) {
     return (
@@ -160,9 +169,7 @@ Environmental Youth Council?</h1>
         </p>
         </div>
 
-        <p class="tc">
           <button class="f5 no-underline center tc grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4" type="submit">Send Message</button>
-        </p>
       </form>
       </Container>
 
