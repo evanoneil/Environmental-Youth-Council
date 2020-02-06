@@ -218,13 +218,13 @@ Kashmere HS - TBD
             <li class="lh-copy fw3 f3 mb3">
             Storytelling ability/Impact
             </li>
-            <li class="lh-copy fw3 f3 mb3 ml2">
+            <li class="lh-copy fw3 f4 mb3 ml4">
             Does the video evoke emotion? Is it engaging from beginning to end?
             </li>
             <li class="lh-copy fw3 f3 mb3">
             Video quality
             </li>
-            <li class="lh-copy fw3 f3 mb3 ml2">
+            <li class="lh-copy fw3 f4 mb3 ml4">
             Sound, video, lighting, editing            </li></ul>
 <br />
 
@@ -233,7 +233,7 @@ Kashmere HS - TBD
  <div class="w-50-ns w-100 flex tc pa3">
    <center>
 
-    <a class="link lh-copy black" href="https://www.youtube.com/watch?v=wpFvz3Zm8r0&t=7s"><img src={Inhaling} />
+    <a target="_blank" class="link lh-copy black" href="https://www.youtube.com/watch?v=wpFvz3Zm8r0&t=7s"><img src={Inhaling} />
   <p>2019 First Place Winner
 <br />
 <b>“Inhaling Hope”</b> <br />by Evelyn Garcia, Galena Park High School</p></a>
@@ -243,7 +243,7 @@ Kashmere HS - TBD
 <div class="w-50-ns w-100 flex tc pa3">
 
     <center>
-    <a class="link lh-copy black" href="https://www.youtube.com/watch?v=randDdYRK_Y"> <img src={Illustrated} />                   
+    <a target="_blank" class="link lh-copy black" href="https://www.youtube.com/watch?v=randDdYRK_Y"> <img src={Illustrated} />                   
         <p>2019 Second Place Winner
 <br /><b>“Illustrated: Particulate Matter's Health Effects” </b> <br />by Kevin Juarez, Pasadena Memorial High School
 </p></a>
