@@ -40,7 +40,19 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
             <h1 class="mw7 f2-m f2-l f3 fw6 tc white mb3">Preparing students in Houston and the surrounding areas to be the next generation of leaders building healthy and resilient communities.</h1>
             </center>
           </div>
-         
+          <section
+        class="cf w-60-l w-80-m w-90 center pa3 pv5-l bg-green subheadblock2"
+      >
+        <div class="subheadinterior justify-between flex flex-wrap">
+          <Subheaditem icon={Flower} title="Environmental Health" />
+          <Subheaditem icon={Cloud} title="Air Quality" />
+          <Subheaditem icon={GWW} title="Climate Change" />
+          <Subheaditem icon={Sun} title="Environmental Justice" />
+          <Subheaditem icon={World} title="Public Policy" />
+          <Subheaditem icon={Hand} title="Civic Engagement" />
+
+        </div>
+      </section>
         </article>
       </div>
     </div>

@@ -35,7 +35,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   src={Break} /> 
   </div>
 
-      <section
+      {/* <section
         class="cf w-60-l w-80-m w-90 center pa3 pv5-l bg-green subheadblock2"
       >
         <div class="subheadinterior justify-between flex flex-wrap">
@@ -47,7 +47,7 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <Subheaditem icon={Hand} title="Civic Engagement" />
 
         </div>
-      </section>
+      </section> */}
 
       <section class="cf w-100 tc pa5 bg-near-white">
         {/* <img class="fl" src={Bug} /> */}

@@ -9,7 +9,7 @@ import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
-import Layout from "../containers/layout";
+import LayoutH from "../components/layouth";
 import "../layouts/tachyons/css/tachyons.css";
 import "../layouts/custom.css";
 import Header from "../components/header";
@@ -94,7 +94,7 @@ const IndexPage = props => {
   }
 
   return (
-    <Layout>
+    <LayoutH>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Subheader />
       <Container>
@@ -108,7 +108,7 @@ const IndexPage = props => {
           />
         )} */}
       </Container>
-    </Layout>
+    </LayoutH>
   );
 };
 

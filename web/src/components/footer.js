@@ -4,6 +4,7 @@ import Icon from './icon'
 import {cn} from '../lib/helpers'
 import EYCIcon from './img/eyc_icon.png'
 import Prefooter from './img/prefooter.png'
+import EdfLogo from './img/edf.png'
 
 import styles from './footer.module.css'
 
@@ -13,7 +14,7 @@ const Footer = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <h1 class="f2 f1-l fw2 black-90 mb0 lh-title">Would you like more information?</h1>
   <h2 class="fw1 f3 black-80 mt3 mb4"></h2>
   <a class="f5 no-underline grow dib v-mid bg-green white ba ph4 pv3 mb3 pa6 br4"  href="/contact">Contact Us</a>
-  <br /><img class="w-20 mt5" src="https://onebreathhou.org/static/edf-2a1487a131ff6d018a6e886b7ac4b25e.png" />
+  <br /><img class="w-20 mt5" src={EdfLogo} />
 
 </div>
 
