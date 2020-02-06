@@ -44,12 +44,12 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle, message}) => (
         class="cf w-60-l w-80-m w-90 center pa3 pv5-l bg-green subheadblock2"
       >
         <div class="subheadinterior justify-between flex flex-wrap">
-          <Subheaditem icon={Flower} title="Environmental Health" />
-          <Subheaditem icon={Cloud} title="Air Quality" />
-          <Subheaditem icon={GWW} title="Climate Change" />
-          <Subheaditem icon={Sun} title="Environmental Justice" />
-          <Subheaditem icon={World} title="Public Policy" />
-          <Subheaditem icon={Hand} title="Civic Engagement" />
+          <Subheaditem icon={Flower} title="Environmental Health" desc="Environmental Health focuses on how human health is impacted by environmental factors, both natural and man-made. The field works to advance policies and programs to reduce chemical and other environmental exposures in air, water, soil and food to protect people and provide communities with healthier environments."/>
+          <Subheaditem icon={Cloud} title="Air Quality" desc="Air quality refers to the condition of the air around us. Good air quality is free from pollutants such as smoke, dust, smog and emissions from other sources, both natural and man-made. Good air quality is essential for the preservation of life on this planet for humans, plants, animals and natural resources. "/>
+          <Subheaditem icon={GWW} title="Climate Change" desc="Climate change refers to the rise in average surface temperatures on Earth caused by growing emissions of carbon dioxide from human activities. Impacts related to climate change are evident —such as human health, agriculture and food security, water supply, transportation, energy, ecosystems, and others—and are expected to become increasingly disruptive in the coming decades."/>
+          <Subheaditem icon={Sun} title="Environmental Justice" desc="Environmental justice is the fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income, with respect to the development, implementation, and enforcement of environmental laws, regulations, and policies. Environmental justice really reflects the fundamental reality that vulnerable communities are all too often subject to the disproportionate burden of pollution and contamination."/>
+          <Subheaditem icon={World} title="Public Policy" desc="Public policy can be generally defined as a collection of laws, mandates, regulations, and funding priorities established by a governmental entity or its representatives through a political process."/>
+          <Subheaditem icon={Hand} title="Civic Engagement" desc="Civic engagement means working to make a difference in the civic life of our communities and developing the combination of knowledge, skills, values and motivation to make that difference. It means promoting the quality of life in a community, through both political and non-political processes."/>
 
         </div>
       </section>

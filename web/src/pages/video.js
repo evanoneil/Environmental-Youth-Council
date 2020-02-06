@@ -20,6 +20,8 @@ import PMHE from "../components/img/2.png";
 import GFC from "../components/img/3.png";
 import Inhaling from "../components/img/1.png"
 import Illustrated from "../components/img/2.png"
+import Doc1 from "../components/pdf/Rules-and-Guidelines.pdf"
+import Doc2 from "../components/pdf/Video-Topic-Ideas.pdf"
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -258,16 +260,18 @@ To receive information about how your school can participate!</h3>
 <div class="w-100 flex flex-wrap green tc">
               <div class="w-50-ns w-100 flex tc pa3">
                   <span class="tc center">
-                    <p>
+                    <a class="link green" href={Doc1}>
+                      <p>
                     Click here to view complete <br />contest rules and guidelines
-                    </p>
+                    </p></a>
                   </span>
               </div>
 
               <div class="w-50-ns w-100 flex tc pa3">
                 <span class="tc center">
+                <a class="link green" href={Doc2}>
                   <p>
-                  Need ideas for your video? <br />Click here</p>                </span>
+                  Need ideas for your video? <br />Click here</p>    </a>            </span>
               </div>
 
 
