@@ -1,12 +1,12 @@
 .enterprise {
-  background: url('./img/group.png');
+  background: url("./img/group.png");
   background-size: cover;
   background-position: center;
-  width:100%;
+  width: 100%;
 }
 
 .bluebk {
-  background-color: rgba(0, 78, 149, 0.7);
+  background-color: rgba(0, 78, 149, 0.5);
 }
 
 .galaxy {

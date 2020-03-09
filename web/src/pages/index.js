@@ -9,7 +9,7 @@ import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
-import LayoutH from "../components/layouth";
+import Layout from "../components/layout";
 import "../layouts/tachyons/css/tachyons.css";
 import "../layouts/custom.css";
 import Header from "../components/header";
@@ -123,10 +123,11 @@ const IndexPage = props => {
   }
 
   return (
-    <LayoutH nodes={focusNodes}>
+    <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Subheader nodes={aboutNodes} />
+      <Subheader nodes={aboutNodes} focusNodes={focusNodes} />
       <Container>
+        {/* <Subheaditem nodes={focusNodes} /> */}
         {/* {focusNodes && <Subheaditem nodes={focusNodes} />} */}
         {/* <Header /> */}
         {/* <h1 hidden>Welcome to {site.title}</h1>
@@ -138,7 +139,7 @@ const IndexPage = props => {
           />
         )} */}
       </Container>
-    </LayoutH>
+    </Layout>
   );
 };
 export default IndexPage;

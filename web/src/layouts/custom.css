@@ -9,7 +9,7 @@
 }
 
 .subheadblock {
-  /* margin-top: -50px; */
+  margin-top: -40px;
   z-index: -0;
   position: relative;
 }
@@ -19,11 +19,11 @@
   margin-bottom: 100px;
   z-index: 2 !important;
   position: relative; */
-  bottom: -150px;
+  /* bottom: -150px;
   position: relative;
-  z-index: 10;
+  z-index: 10; */
+  margin-top: 50px;
   border-radius: 35px;
-
 }
 /* 
 @media only screen and (max-height: 750px) {
@@ -44,7 +44,8 @@
   } */
 
 .subheadinterior {
-  margin-left:auto;margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mlauto {
@@ -53,11 +54,11 @@
 }
 
 .zneg1 {
-  z-index:-10;
+  z-index: -10;
 }
 
 .z1 {
-  z-index:-10;
+  z-index: -10;
 }
 
 .row {
@@ -91,7 +92,7 @@
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .get-in-touch .title {
   text-align: center;
@@ -121,9 +122,10 @@
 .contact-form .input-text:focus {
   outline: none;
 }
-.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
   -webkit-transform: translateY(-24px);
-          transform: translateY(-24px);
+  transform: translateY(-24px);
 }
 .contact-form .label {
   position: absolute;
@@ -134,9 +136,9 @@
   font-weight: 400;
   color: #888;
   cursor: text;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 .contact-form .submit-btn {
   display: inline-block;
@@ -186,12 +188,12 @@
   text-align: center;
   padding: 5px;
   border-radius: 6px;
- line-height:22px;
+  line-height: 22px;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  right:-25px;
-  top:-100px;
+  right: -25px;
+  top: -100px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

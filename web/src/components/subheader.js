@@ -26,7 +26,7 @@ import WhatWeDo from "./whatwedo";
 
 import styles from "./header.module.css";
 
-const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes }) => (
+const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes, focusNodes }) => (
   <div class="bg-near-white">
     <div class="">
       <img class="w-100 subheadblock" src={Break} />
@@ -55,37 +55,14 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes }) => (
         program is funded by a grant from the Gulf Research Program of the National Academy of
         Sciences (NAS).
       </p>
-      <p class="lh-copy fw3 f3">The Environmental Youth Council includes students from </p>
-      <div class="w-100 flex  flex-wrap tc">
-        <div class="w-33-l w-100 flex tc pa3">
-          <center>
-            <span class="mlauto">
-              <img src={GP} />
-            </span>
-            <h4>Galena Park High School</h4>
-          </center>
-        </div>
-        <div class="w-33-l w-100 flex tc pa3">
-          <center>
-            <span class="mlauto">
-              <img src={PM} />
-            </span>
-            <h4>Pasadena Memorial High School</h4>
-          </center>
-        </div>
-        <div class="w-33-l w-100 flex tc pa3">
-          <center>
-            <span class="mlauto">
-              <img src={RYSS} />
-            </span>
-            <h4>Raul Yzaguirre School for Success (RYSS)</h4>
-          </center>
-        </div>
-      </div>
+      <p class="lh-copy fw3 f3">
+        The Environmental Youth Council includes students from Galena Park High School, Pasadena
+        Memorial High School, and Raul Yzaguirre School for Success (RYSS).
+      </p>
 
       <br />
       <WhatWeDo nodes={nodes} />
-
+      <Subheaditem focusNodes={focusNodes} />
       {/* <h2 class="tc dark-blue f2">What we do</h2>
       <div class="flex flex-wrap justify-center">
 
