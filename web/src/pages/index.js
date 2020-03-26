@@ -132,17 +132,21 @@ const IndexPage = props => {
         <meta property="title" content={site.title} />
 
         <meta property="og:title" content={site.title} />
-        <meta name="description" content={site.description} />
-        <meta property="image" content={OGImage} />
-        <meta property="og:image" content={OGImage} />
-
-        <meta name="twitter:title" content={site.title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content={site.description} />
+        <meta property="description" content={site.description} />
         <meta
-          property="twitter:image"
+          property="image"
           content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
         />
+        <meta
+          property="og:image"
+          content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta
+          property="twitter:image"
+          content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
+        /> */}
       </Helmet>
       {/* <SEO title={site.title} description={site.description} keywords={site.keywords} /> */}
       <Subheader nodes={aboutNodes} focusNodes={focusNodes} />
