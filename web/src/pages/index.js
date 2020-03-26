@@ -136,12 +136,7 @@ const IndexPage = props => {
         <meta name="twitter:description" content={site.description} />
         <meta name="twitter:image" content={OGImage} />
       </Helmet>
-      <SEO
-        title={site.title}
-        description={site.description}
-        keywords={site.keywords}
-        image={OGImage}
-      />
+      <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Subheader nodes={aboutNodes} focusNodes={focusNodes} />
       <Container>
         {/* <Subheaditem nodes={focusNodes} /> */}
