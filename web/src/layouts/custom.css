@@ -200,3 +200,51 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+h1 {
+  /* text-align: center; */
+}
+
+h2 {
+  text-align: center;
+  color: #00449e;
+  font-size: 2.25rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #00449e;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #19a974;
+}
+
+h5 a {
+  color: #19a974;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
