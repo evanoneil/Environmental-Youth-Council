@@ -133,13 +133,13 @@ const IndexPage = props => {
 
         <meta property="og:title" content={site.title} />
         <meta name="description" content={site.description} />
-        <meta name="image" content={OGImage} />
-        <meta name="og:image" content={OGImage} />
+        <meta property="image" content={OGImage} />
+        <meta property="og:image" content={OGImage} />
 
         <meta name="twitter:title" content={site.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={site.description} />
-        <meta name="twitter:image" content={OGImage} />
+        <meta property="twitter:image" content={OGImage} />
       </Helmet>
       {/* <SEO title={site.title} description={site.description} keywords={site.keywords} /> */}
       <Subheader nodes={aboutNodes} focusNodes={focusNodes} />
