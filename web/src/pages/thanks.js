@@ -14,7 +14,9 @@ import "../layouts/tachyons/css/tachyons.css";
 import "../layouts/custom.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { navigate } from 'gatsby-link'
+import { navigate } from "gatsby-link";
+import Helmet from "react-helmet";
+import OGImage from "../images/og.jpg";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -69,15 +71,27 @@ export const query = graphql`
   }
 `;
 
-
-
 const ThanksPage = props => {
   const { data, errors } = props;
-
 
   if (errors) {
     return (
       <Layout>
+        <Helmet>
+          <meta name="image" content={OGImage} />
+          <meta name="og:image" content={OGImage} />
+
+          <meta name="twitter:title" content={site.title} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:description" content={site.description} />
+          <meta name="twitter:image" content={OGImage} />
+        </Helmet>
+        <SEO
+          title={site.title}
+          description={site.description}
+          keywords={site.keywords}
+          image={OGImage}
+        />
         <GraphQLErrorList errors={errors} />
       </Layout>
     );
@@ -95,16 +109,12 @@ const ThanksPage = props => {
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
     );
   }
-  
 
   return (
     <Layout>
-          <Container>
-
-      <h1 class="tc dark-blue mb5">Thanks for your message, we'll be in touch soon!</h1>
-     
+      <Container>
+        <h1 class="tc dark-blue mb5">Thanks for your message, we'll be in touch soon!</h1>
       </Container>
-
     </Layout>
   );
 };

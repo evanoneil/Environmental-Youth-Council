@@ -16,6 +16,8 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Subheader from "../components/subheader";
 import Subheaditem from "../components/subheaditem";
+import Helmet from "react-helmet";
+import OGImage from "../images/og.jpg";
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -115,6 +117,7 @@ const IndexPage = props => {
   const focusNodes = data && data.focus && mapEdgesToNodes(data.focus);
   const aboutNodes = data && data.about && mapEdgesToNodes(data.about);
   console.log(aboutNodes);
+  console.log({ OGImage });
 
   if (!site) {
     throw new Error(
@@ -124,7 +127,21 @@ const IndexPage = props => {
 
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <Helmet>
+        <meta name="image" content={OGImage} />
+        <meta name="og:image" content={OGImage} />
+
+        <meta name="twitter:title" content={site.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content={site.description} />
+        <meta name="twitter:image" content={OGImage} />
+      </Helmet>
+      <SEO
+        title={site.title}
+        description={site.description}
+        keywords={site.keywords}
+        image={OGImage}
+      />
       <Subheader nodes={aboutNodes} focusNodes={focusNodes} />
       <Container>
         {/* <Subheaditem nodes={focusNodes} /> */}

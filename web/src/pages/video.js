@@ -23,6 +23,8 @@ import Illustrated from "../components/img/2.png";
 import Doc1 from "../components/pdf/Rules-and-Guidelines.pdf";
 import Doc2 from "../components/pdf/Video-Topic-Ideas.pdf";
 import PortableText from "../components/portableText";
+import Helmet from "react-helmet";
+import OGImage from "../images/og.jpg";
 
 const serializers = {
   types: {
@@ -133,7 +135,21 @@ const VideoPage = props => {
 
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <Helmet>
+        <meta name="image" content={OGImage} />
+        <meta name="og:image" content={OGImage} />
+
+        <meta name="twitter:title" content={site.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content={site.description} />
+        <meta name="twitter:image" content={OGImage} />
+      </Helmet>
+      <SEO
+        title={site.title}
+        description={site.description}
+        keywords={site.keywords}
+        image={OGImage}
+      />{" "}
       <Container>
         <section class="cf w-100  pa5">
           <PortableText blocks={site._rawVideopagecontent} serializers={serializers} />
