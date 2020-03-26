@@ -1,12 +1,10 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
-
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
 
 @font-face {
   font-family: GT-Eesti-Bold;
   src: url("./type/GT-Eesti-Text-Bold.eot");
-  src: url("./type/GT-Eesti-Text-Bold.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("./type/GT-Eesti-Text-Bold.eot?#iefix") format("embedded-opentype"),
     url("./type/GT-Eesti-Text-Bold.woff2") format("woff2"),
     url("./type/GT-Eesti-Text-Bold.woff") format("woff"),
     url("./type/GT-Eesti-Text-Bold.ttf") format("truetype");
@@ -15,25 +13,26 @@
 @font-face {
   font-family: GT-Eesti-Thin;
   src: url("./type/GT-Eesti-Text-Thin.eot");
-  src: url("./type/GT-Eesti-Text-Thin.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("./type/GT-Eesti-Text-Thin.eot?#iefix") format("embedded-opentype"),
     url("./type/GT-Eesti-Text-Thin.woff2") format("woff2"),
     url("./type/GT-Eesti-Text-Thin.woff") format("woff"),
     url("./type/GT-Eesti-Text-Thin.ttf") format("truetype");
 }
 
-body {
+body,
+h4,
+h5 {
   font-family: "GT-Eesti-Thin" !important;
-}   
+}
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3 {
   font-family: "GT-Eesti-Bold" !important;
-
 }
 
 nav {
   font-family: "GT-Eesti-Bold" !important;
-
 }
 
 .content {

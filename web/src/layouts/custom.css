@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900");
-
 .galaxy {
   border-radius: 0 0 35px 35px;
 }
@@ -218,6 +216,7 @@ h3 {
 }
 
 h4 {
+  font-family: "GT-Eesti-Thin" !important;
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.5;
