@@ -95,7 +95,7 @@ export const query = graphql`
     }
   }
 `;
-
+console.log({ OGImage });
 const IndexPage = props => {
   const { data, errors } = props;
 
@@ -133,14 +133,6 @@ const IndexPage = props => {
 
         <meta property="og:title" content={site.title} />
         <meta name="description" content={site.description} />
-        <meta name="image" content={OGImage} />
-        <meta name="og:image" content={OGImage} />
-
-        <meta name="twitter:title" content={site.title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content={site.description} />
-        <meta name="twitter:image" content={OGImage} />
-
         <meta name="image" content={OGImage} />
         <meta name="og:image" content={OGImage} />
 
