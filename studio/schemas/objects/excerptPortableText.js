@@ -6,7 +6,7 @@ export default {
     {
       title: 'Block',
       type: 'block',
-      styles: [{title: 'Normal', value: 'normal'}],
+      styles: [{title: 'h6', value: 'h6'}],
       lists: [],
       marks: {
         decorators: [

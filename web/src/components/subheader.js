@@ -1,35 +1,35 @@
-import { Link } from "gatsby";
-import React from "react";
-import Icon from "./icon";
-import { cn } from "../lib/helpers";
-import Group from "./img/group.png";
-import Logo from "./img/eyc.png";
-import Flower from "./img/icons/flower_256.png";
-import Cloud from "./img/icons/cloud_256.png";
-import GWW from "./img/icons/global-warming-world_256.png";
-import Sun from "./img/icons/sun-heat_256.png";
-import World from "./img/icons/world-caring_256.png";
-import Hand from "./img/icons/hand_256.png";
-import Bug from "./img/bug.png";
-import One from "./img/1.jpg";
-import Two from "./img/2.jpg";
-import Three from "./img/3.jpg";
-import Four from "./img/4.jpg";
-import Five from "./img/5.jpg";
-import Six from "./img/6.jpg";
-import Break from "./img/break.png";
-import GP from "./img/gp.jpg";
-import PM from "./img/mem.png";
-import RYSS from "./img/ryss.jpg";
-import Subheaditem from "./subheaditem";
-import WhatWeDo from "./whatwedo";
+import {Link} from 'gatsby'
+import React from 'react'
+import Icon from './icon'
+import {cn} from '../lib/helpers'
+import Group from './img/group.png'
+import Logo from './img/eyc.png'
+import Flower from './img/icons/flower_256.png'
+import Cloud from './img/icons/cloud_256.png'
+import GWW from './img/icons/global-warming-world_256.png'
+import Sun from './img/icons/sun-heat_256.png'
+import World from './img/icons/world-caring_256.png'
+import Hand from './img/icons/hand_256.png'
+import Bug from './img/bug.png'
+import One from './img/1.jpg'
+import Two from './img/2.jpg'
+import Three from './img/3.jpg'
+import Four from './img/4.jpg'
+import Five from './img/5.jpg'
+import Six from './img/6.jpg'
+import Break from './img/break.png'
+import GP from './img/gp.jpg'
+import PM from './img/mem.png'
+import RYSS from './img/ryss.jpg'
+import Subheaditem from './subheaditem'
+import WhatWeDo from './whatwedo'
 
-import styles from "./header.module.css";
+import styles from './header.module.css'
 
-const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes, focusNodes }) => (
-  <div class="bg-near-white">
-    <div class="">
-      <img class="w-100 subheadblock" src={Break} />
+const Subheader = ({onHideNav, onShowNav, showNav, siteTitle, nodes, focusNodes}) => (
+  <div className='bg-near-white'>
+    <div className=''>
+      <img className='w-100 subheadblock' src={Break} />
     </div>
 
     {/* <section
@@ -46,17 +46,17 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes, focusNodes
         </div>
       </section> */}
 
-    <section class="cf w-100 tc pa5 bg-near-white">
+    <section className='cf w-100 tc pa5 bg-near-white'>
       {/* <img class="fl" src={Bug} /> */}
-      <h2 class="tc dark-blue f2">What is the Environmental Youth Council?</h2>
-      <p class="lh-copy fw3 f3">
+      <h2 className='tc dark-blue f2'>What is the Environmental Youth Council?</h2>
+      <p className='lh-copy fw3 f3'>
         Environmental Defense Fund’s Environmental Youth Council is an educational program for high
         school students from the communities in Houston that are most affected by air pollution. The
         program is funded by a grant from the Gulf Research Program of the National Academy of
         Sciences (NAS).
       </p>
-      <p class="lh-copy fw3 f3">
-        The Environmental Youth Council includes students from Galena Park High School, Pasadena
+      <p className='lh-copy fw3 f3'>
+        The Environmental Youth Council includes students from Pasadena High School, Pasadena
         Memorial High School, and Raul Yzaguirre School for Success (RYSS).
       </p>
 
@@ -170,6 +170,6 @@ const Subheader = ({ onHideNav, onShowNav, showNav, siteTitle, nodes, focusNodes
       </div> */}
     </section>
   </div>
-);
+)
 
-export default Subheader;
+export default Subheader
