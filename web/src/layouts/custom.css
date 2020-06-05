@@ -192,7 +192,7 @@
   position: absolute;
   z-index: 1;
   right: -80px;
-  top: -175px;
+  bottom: -175px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
