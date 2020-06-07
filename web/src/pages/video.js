@@ -10,7 +10,7 @@ import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
-import Layout from "../containers/layout";
+import Layout2 from "../containers/layout2";
 import "../layouts/tachyons/css/tachyons.css";
 import "../layouts/custom.css";
 import Header from "../components/header";
@@ -134,7 +134,7 @@ const VideoPage = props => {
   }
 
   return (
-    <Layout>
+    <Layout2>
       <Helmet>
         <meta name="image" content={OGImage} />
         <meta name="og:image" content={OGImage} />
@@ -155,7 +155,7 @@ const VideoPage = props => {
           <PortableText blocks={site._rawVideopagecontent} serializers={serializers} />
         </section>
       </Container>
-    </Layout>
+    </Layout2>
   );
 };
 
