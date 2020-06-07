@@ -156,7 +156,7 @@ const VideoPage = props => {
           content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
         /> */}
       </Helmet>
-      <SEO title={site.title} description={site.description} keywords={site.keywords} />{" "}
+      {/* <SEO title={site.title} description={site.description} keywords={site.keywords} />{" "} */}
       <Container>
         <section class="cf w-100  pa5">
           <PortableText blocks={site._rawVideopagecontent} serializers={serializers} />
