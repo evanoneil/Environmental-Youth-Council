@@ -145,10 +145,6 @@ const VideoPage = props => {
           property="image"
           content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
         />
-        <meta
-          property="og:image"
-          content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
-        />
 
         <meta name="twitter:card" content="summary_large_image" />
         {/* <meta
