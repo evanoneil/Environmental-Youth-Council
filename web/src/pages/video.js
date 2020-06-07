@@ -136,13 +136,25 @@ const VideoPage = props => {
   return (
     <Layout2>
       <Helmet>
-        <meta name="image" content={OGImage} />
-        <meta name="og:image" content={OGImage} />
+        <title>{site.title}</title>
+        <meta property="title" content={site.title} />
 
-        <meta name="twitter:title" content={site.title} />
+        <meta property="og:title" content={site.title} />
+        <meta property="description" content={site.description} />
+        <meta
+          property="image"
+          content="https://environmental-youth-council.netlify.app/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
+        />
+        <meta
+          property="og:image"
+          content="https://environmental-youth-council.netlify.app/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
+        />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content={site.description} />
-        <meta name="twitter:image" content={OGImage} />
+        {/* <meta
+          property="twitter:image"
+          content="https://environmental-youth-council.netlify.com/static/og-39aa5b62b7b76ab64ac4a6154fe2f72c.jpg"
+        /> */}
       </Helmet>
       <SEO
         title={site.title}
