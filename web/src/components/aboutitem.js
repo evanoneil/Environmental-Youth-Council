@@ -31,7 +31,7 @@ function AboutItem(props) {
             </div>
           </div>
           {props._rawExcerpt && (
-            <p class="f6 lh-copy measure mt2 white">
+            <p class="f6 lh-copy mt2 white">
               <PortableText blocks={props._rawExcerpt} />
             </p>
           )}
